@@ -19,7 +19,7 @@ except ImportError:
 
 
 def b2_url_encode(s):
-    return quote(s.encode('utf-8')).replace('%20', ' ')
+    return quote(s.encode('utf-8'))
 
 
 def b2_url_decode(s):
