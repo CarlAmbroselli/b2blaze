@@ -196,7 +196,7 @@ class B2FileList(object):
         """ Internal method, return single file by file name """ 
         path = API.list_all_files
         params = {
-            'prefix': b2_url_encode(file_name),
+            'prefix': file_name,
             'bucketId': self.bucket.bucket_id
         }
 
